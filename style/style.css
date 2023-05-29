@@ -1,0 +1,132 @@
+body {
+  background: #045757;
+  font-family: 'Open Sans', sans-serif;
+}
+nav.menu ul{
+    overflow: hidden;
+    color:#fff;
+    list-style: none;
+    float:left;
+    padding: 21px;
+    width: 358px;
+    height:50px;
+    margin:0 0 0; 
+    background: #222222;
+    font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav.menu ul li{
+    margin: 15px;
+    float: left;
+    flex: 1;
+}
+nav.menu ul a {
+    padding: 17px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-align: center;
+}
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.login-header {
+  background: #014141;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-radius: 15px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+.login input[type="submit"] {
+  background: #222222;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.login input[type="submit"]:hover {
+  background: #033b3b;
+}
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: rgb(3, 102, 120);
+}
+
+nav.menu ul a:hover{
+  text-decoration: underline;
+  border-radius: 15px;
+  background: #ffffff;
+  color: rgb(2,129,150);
+}
+@media screen and(max-width:960px){
+  nav.menu ul{
+      width:100%;
+  }
+  nav.menu ul{
+      float:inherit;
+  }
+  nav.menu li{
+      float:inherit;
+      margin:0;
+  }
+  nav.menu ul li{
+      float:inherit;
+      margin:0;
+  }
+  nav.menu ul a{
+      padding: 15px;
+      font-size: 15px;
+      border-top: 1px solid #1abf9f;
+      border-bottom: 1px solid #16a085;
+  }
+}
+@media screen and(max-width:460px){
+  nav.menu ul a{
+      padding:15px;
+      font-size: 14px;
+  }
+}
